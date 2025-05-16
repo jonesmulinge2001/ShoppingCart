@@ -73,11 +73,12 @@ h1 {
 
 
 #cartItem {
-    flex: 1;
     padding: 1rem;
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    height: fit-content;
 }
 
 #cartItem h2 {

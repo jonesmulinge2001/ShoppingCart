@@ -59,7 +59,7 @@ class Cart {
             cartProduct.textContent = `${item.productName} - ${item.price}`;
             
             cartProducts.appendChild(cartProduct);
-            cartDiv.appendChild(cartProduct);
+            cartDiv.appendChild(cartProducts);
         });
 
         cartDiv.textContent = `(${this.cart.length})`;
