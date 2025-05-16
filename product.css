@@ -1,0 +1,92 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffaf7;
+    margin: 0;
+    padding: 2rem;
+    color: #333;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.main {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Products grid */
+#products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    flex: 3;
+}
+
+/* Product Card */
+.product {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.product:hover {
+    transform: translateY(-4px);
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.product p {
+    margin: 0.5rem 1rem;
+    font-size: 0.95rem;
+}
+
+.product p:nth-child(3) {
+    font-weight: bold;
+    color: #ff4f00;
+}
+
+/* Button */
+.addToCart {
+    display: block;
+    margin: 0.8rem 1rem 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #fff5e5;
+    border: 1px solid #ff7a00;
+    color: #ff7a00;
+    font-weight: 500;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.addToCart:hover {
+    background-color: #ff7a00;
+    color: white;
+}
+
+/* Cart styling */
+#cartItem {
+    flex: 1;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#cartItem h2 {
+    font-size: 1.2rem;
+    color: #e44d26;
+}
+
+#cartItem p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
