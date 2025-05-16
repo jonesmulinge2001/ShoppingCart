@@ -53,7 +53,7 @@ class Cart {
         const cartProducts = document.getElementById("cartItem");   
         const cartDiv = document.getElementById("cartValue");
 
-        cartProducts.innerHTML = '';
+        // cartProducts.innerHTML = '';
         this.cart.forEach(item => {
             const cartProduct = document.createElement("p");
             cartProduct.textContent = `${item.productName} - ${item.price}`;
