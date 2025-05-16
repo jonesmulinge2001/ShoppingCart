@@ -16,7 +16,7 @@ h1 {
     gap: 2rem;
 }
 
-/* Products grid */
+
 #products {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -24,7 +24,6 @@ h1 {
     flex: 3;
 }
 
-/* Product Card */
 .product {
     background: #fff;
     border-radius: 12px;
@@ -53,7 +52,7 @@ h1 {
     color: #ff4f00;
 }
 
-/* Button */
+
 .addToCart {
     display: block;
     margin: 0.8rem 1rem 1rem;
@@ -72,7 +71,7 @@ h1 {
     color: white;
 }
 
-/* Cart styling */
+
 #cartItem {
     flex: 1;
     padding: 1rem;

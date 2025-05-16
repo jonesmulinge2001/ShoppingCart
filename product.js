@@ -45,32 +45,34 @@ class Cart {
         const product = productsList.find(product => product.productId === parseInt(productId));
         if (product) {
             this.cart.push(product);
-            this.updateCartCount();
+            this.updateCartCountValue();
         }
     }
 
-    updateCartCount() {
+    updateCartCountValue() {
         const cartProducts = document.getElementById("cartItem");   
         const cartDiv = document.getElementById("cartValue");
 
-        // cartProducts.innerHTML = '';
+        cartProducts.innerHTML = '';
         this.cart.forEach(item => {
             const cartProduct = document.createElement("p");
             cartProduct.textContent = `${item.productName} - ${item.price}`;
+            
             cartProducts.appendChild(cartProduct);
+            cartDiv.appendChild(cartProduct);
         });
 
-        cartDiv.textContent = `Cart (${this.cart.length})`;
+        cartDiv.textContent = `(${this.cart.length})`;
     }
 }
 
-const cart = new Cart();
+const cart = new Cart(); // cart object
 
-function handleAddToCartClick(event) {
-    if (event.target.classList.contains("addToCart")) {
-        const productId = event.target.id;
-        cart.addProductToCart(productId);
-    }
-}
+// function handleAddToCartClick(event) {
+//     if (event.target.classList.contains("addToCart")) {
+//         const productId = event.target.id;
+//         cart.addProductToCart(productId);
+//     }
+// }
 
-document.getElementById("products").addEventListener("click", handleAddToCartClick);
+// document.getElementById("products").addEventListener("click", handleAddToCartClick);
